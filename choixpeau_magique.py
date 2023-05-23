@@ -5,6 +5,9 @@
 # 
 # C vs Python (Mini-jeu)
 
+print("Choixpeau magique : << Difficile, très difficile… Je vois beaucoup de courage et des qualités intellectuelles aussi. Il y a du talent, oh oui, et un grand désir de faire ses preuves. Alors, où vais-je te mettre ? >>\n\n")
+print("Le choixpeau magique a quelques questions à vous poser, veuillez y répondre en choisissant le nombre associé au caractère. À la fin, nous vous révélerons la maison que vous rejoindrez.\n\n")
+
 
 question1 = int(input("Êtes-vous plutôt :\n1. Ambitieux\n2. Protecteur\n3. Loyal\n4. Empathique\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
 question2 = int(input("Êtes-vous plutôt :\n1. Rusé\n2. Aventurier\n3. Travailleur\n4. Intelligent\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
