@@ -1,33 +1,28 @@
+print("Choixpeau magique : << Difficile, très difficile… Je vois beaucoup de courage et des qualités intellectuelles aussi. Il y a du talent, oh oui, et un grand désir de faire ses preuves. Alors, où vais-je te mettre ? >>\n")
+print("Le choixpeau magique a quelques questions à vous poser, veuillez y répondre en choisissant le nombre associé au caractère. À la fin, nous vous révélerons la maison que vous rejoindrez.\n")
 
-# Créer le 22 mai 2023
-# par Nivetha Jeyakumar
-# Master IRS P33
-# 
-# C vs Python (Mini-jeu)
+serpentard = ["Ambitieux", "Rusé", "Manipulateur", "Franc", "Egocentrique"]
+gryffondor = ["Audacieux", "Aventurier", "Impulsif", "Courageux", "Protecteur"]
+poufsouffle = ["Trop prudent", "Travailleur", "Dévoué", "Loyal", "Réservé"]
+serdaigle = ["Rêveur", "Réfléchi", "Introverti", "Créatif", "Observateur"]
 
-print("Choixpeau magique : << Difficile, très difficile… Je vois beaucoup de courage et des qualités intellectuelles aussi. Il y a du talent, oh oui, et un grand désir de faire ses preuves. Alors, où vais-je te mettre ? >>\n\n")
-print("Le choixpeau magique a quelques questions à vous poser, veuillez y répondre en choisissant le nombre associé au caractère. À la fin, nous vous révélerons la maison que vous rejoindrez.\n\n")
+totalPoints = 0
 
+for i in range(5):
+    print("Êtes-vous plutôt :")
+    print("    1. " + serpentard[i])
+    print("    2. " + gryffondor[i])
+    print("    3. " + poufsouffle[i])
+    print("    4. " + serdaigle[i])
 
-question1 = int(input("Êtes-vous plutôt :\n1. Ambitieux\n2. Protecteur\n3. Loyal\n4. Empathique\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-question2 = int(input("Êtes-vous plutôt :\n1. Rusé\n2. Aventurier\n3. Travailleur\n4. Intelligent\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-question3 = int(input("Êtes-vous plutôt :\n1. Manipulateur\n2. Impulsif\n3. Trop prudent\n4. Indépendant\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-question4 = int(input("Êtes-vous plutôt :\n1. Egocentrique\n2. Charismatique\n3. Réservé\n4. Introverti\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-question5 = int(input("Êtes-vous plutôt :\n1. Franc\n2. Courageux\n3. Loyal\n4. Réfléchi\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-question6 = int(input("Êtes-vous plutôt :\n1. Ingénieux\n2. Audacieux\n3. Travailleur\n4. Créatif\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-question7 = int(input("Êtes-vous plutôt :\n1. Opportuniste\n2. Téméraire\n3. Trop prudent\n4. Rêveur\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-question8 = int(input("Êtes-vous plutôt :\n1. Persévérant\n2. Enthousiaste\n3. Sincère\n4. Observateur\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-question9 = int(input("Êtes-vous plutôt :\n1. Ambitieux\n2. Courageux\n3. Aimable\n4. Curieux\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
-questionX = int(input("Êtes-vous plutôt :\n1. Rusé\n2. Audacieux\n3. Dévoué\n4. Logique\n\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
+    reponse = int(input("\nChoisissez un nombre entre 1, 2, 3 et 4 : "))
+    totalPoints += reponse
 
-totalPoints = question1 + question2 + question3 + question4 + question5 + question6 + question7 + question8 + question9 + questionX
-
-if totalPoints >= 1 and totalPoints <= 10:
+if totalPoints > 0 and totalPoints < 6:
     print("<< SERPENTARD !!! >> cria le choixpeau.")
-elif totalPoints >= 11 and totalPoints <= 20:
+elif totalPoints >= 6 and totalPoints < 11:
     print("<< GRYFFONDOR !!! >> cria le choixpeau.")
-elif totalPoints >= 21 and totalPoints <= 30:
+elif totalPoints >= 11 and totalPoints < 16:
     print("<< POUFFSOUFFLE !!! >> cria le choixpeau.")
 else:
     print("<< SERDAIGLE !!! >> cria le choixpeau.")
-
